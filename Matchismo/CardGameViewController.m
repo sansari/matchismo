@@ -14,8 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *gameStatus;
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *modeButton;
 @property (nonatomic) int flipCount;
-@property (nonatomic, getter=isTripleMode) BOOL tripleMode;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (strong, nonatomic) CardMatchingGame *game;
 @end
@@ -26,7 +26,7 @@
 {
     if (!_game) _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                            usingDeck:[[PlayingCardDeck alloc] init]
-                                                            withMode:self.isTripleMode];
+                                                            withMode:[self.modeButton selectedSegmentIndex]];
     return _game;
 }
 
@@ -45,6 +45,7 @@
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
     }
 
+    self.modeButton.enabled = !self.game.isInProgress;
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     self.gameStatus.text = self.game.status;
 }
@@ -58,10 +59,6 @@
     self.game = nil;
     self.flipCount = 0;
     [self updateUI];
-}
-
-- (IBAction)switchMode:(UISegmentedControl *)sender {
-    [self setTripleMode:!self.isTripleMode];
 }
 
 - (IBAction)flipCard:(UIButton *)sender {

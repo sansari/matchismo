@@ -23,6 +23,10 @@
 		693E889A1774DCB600309277 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E88991774DCB600309277 /* PlayingCard.m */; };
 		693E889D1774E88A00309277 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E889C1774E88A00309277 /* PlayingCardDeck.m */; };
 		693E88A01778D15B00309277 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E889F1778D15B00309277 /* CardMatchingGame.m */; };
+		69728957177EA73B0096AFB3 /* Joker_by_phantom_limb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69728956177EA73B0096AFB3 /* Joker_by_phantom_limb.jpg */; };
+		69728959177EA89D0096AFB3 /* dark-knight-joker.png in Resources */ = {isa = PBXBuildFile; fileRef = 69728958177EA89D0096AFB3 /* dark-knight-joker.png */; };
+		6972895D177F3A720096AFB3 /* jumbocard-BACK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6972895B177F3A720096AFB3 /* jumbocard-BACK.jpg */; };
+		6972895E177F3A720096AFB3 /* jumbocard-FRONT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6972895C177F3A720096AFB3 /* jumbocard-FRONT.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		693E889C1774E88A00309277 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Models/PlayingCardDeck.m; sourceTree = "<group>"; };
 		693E889E1778D15B00309277 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Models/CardMatchingGame.h; sourceTree = "<group>"; };
 		693E889F1778D15B00309277 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Models/CardMatchingGame.m; sourceTree = "<group>"; };
+		69728956177EA73B0096AFB3 /* Joker_by_phantom_limb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Joker_by_phantom_limb.jpg; sourceTree = "<group>"; };
+		69728958177EA89D0096AFB3 /* dark-knight-joker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark-knight-joker.png"; sourceTree = "<group>"; };
+		6972895B177F3A720096AFB3 /* jumbocard-BACK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jumbocard-BACK.jpg"; sourceTree = "<group>"; };
+		6972895C177F3A720096AFB3 /* jumbocard-FRONT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jumbocard-FRONT.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,9 @@
 		693E88741774AD3300309277 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6972895A177F3A720096AFB3 /* Images */,
+				69728958177EA89D0096AFB3 /* dark-knight-joker.png */,
+				69728956177EA73B0096AFB3 /* Joker_by_phantom_limb.jpg */,
 				693E88751774AD3300309277 /* Matchismo-Info.plist */,
 				693E88761774AD3300309277 /* InfoPlist.strings */,
 				693E88791774AD3300309277 /* main.m */,
@@ -138,6 +149,15 @@
 				693E88961774D88400309277 /* Deck.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		6972895A177F3A720096AFB3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6972895B177F3A720096AFB3 /* jumbocard-BACK.jpg */,
+				6972895C177F3A720096AFB3 /* jumbocard-FRONT.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +217,10 @@
 				693E88821774AD3300309277 /* Default@2x.png in Resources */,
 				693E88841774AD3300309277 /* Default-568h@2x.png in Resources */,
 				693E88871774AD3300309277 /* MainStoryboard.storyboard in Resources */,
+				69728957177EA73B0096AFB3 /* Joker_by_phantom_limb.jpg in Resources */,
+				69728959177EA89D0096AFB3 /* dark-knight-joker.png in Resources */,
+				6972895D177F3A720096AFB3 /* jumbocard-BACK.jpg in Resources */,
+				6972895E177F3A720096AFB3 /* jumbocard-FRONT.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +361,7 @@
 				693E888F1774AD3300309277 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

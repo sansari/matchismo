@@ -25,4 +25,6 @@
 
 @property (nonatomic, getter=isTripleMode) BOOL tripleMode;
 
+@property (nonatomic, readonly, getter=isInProgress) BOOL inProgress;
+
 @end

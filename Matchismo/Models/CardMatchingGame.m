@@ -12,6 +12,7 @@
 @property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic, readwrite) int score;
 @property (nonatomic, readwrite) NSString *status;
+@property (nonatomic, readwrite) BOOL inProgress;
 @end
 
 @implementation CardMatchingGame
@@ -27,7 +28,8 @@
     self = [super init];
 
     if (self) {
-        [self setTripleMode:mode];
+        self.inProgress = NO;
+        self.tripleMode = mode;
         for (int i=0; i < count; i++) {
             Card *card = [deck drawRandomCard];
 
@@ -51,6 +53,8 @@
 #define MISMATCH_PENALTY 2
 
 - (void)flipCardAtIndex:(NSUInteger)index {
+    self.inProgress = YES;
+
     Card *card = [self cardAtIndex:index];
 
     if (!card.isUnplayable) {
