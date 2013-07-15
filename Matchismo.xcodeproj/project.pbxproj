@@ -27,6 +27,7 @@
 		69728959177EA89D0096AFB3 /* dark-knight-joker.png in Resources */ = {isa = PBXBuildFile; fileRef = 69728958177EA89D0096AFB3 /* dark-knight-joker.png */; };
 		6972895D177F3A720096AFB3 /* jumbocard-BACK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6972895B177F3A720096AFB3 /* jumbocard-BACK.jpg */; };
 		6972895E177F3A720096AFB3 /* jumbocard-FRONT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6972895C177F3A720096AFB3 /* jumbocard-FRONT.jpg */; };
+		6997897B179364E50033AE87 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6997897A179364E50033AE87 /* GameResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		69728958177EA89D0096AFB3 /* dark-knight-joker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark-knight-joker.png"; sourceTree = "<group>"; };
 		6972895B177F3A720096AFB3 /* jumbocard-BACK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jumbocard-BACK.jpg"; sourceTree = "<group>"; };
 		6972895C177F3A720096AFB3 /* jumbocard-FRONT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jumbocard-FRONT.jpg"; sourceTree = "<group>"; };
+		69978979179364E50033AE87 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
+		6997897A179364E50033AE87 /* GameResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 		693E88731774AD3300309277 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				69978979179364E50033AE87 /* GameResultViewController.h */,
+				6997897A179364E50033AE87 /* GameResultViewController.m */,
 				693E887C1774AD3300309277 /* CardGameAppDelegate.h */,
 				693E887D1774AD3300309277 /* CardGameAppDelegate.m */,
 				693E88851774AD3300309277 /* MainStoryboard.storyboard */,
@@ -239,6 +244,7 @@
 				693E889A1774DCB600309277 /* PlayingCard.m in Sources */,
 				693E889D1774E88A00309277 /* PlayingCardDeck.m in Sources */,
 				693E88A01778D15B00309277 /* CardMatchingGame.m in Sources */,
+				6997897B179364E50033AE87 /* GameResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
