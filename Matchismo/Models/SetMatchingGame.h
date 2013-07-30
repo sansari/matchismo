@@ -7,21 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Deck.h"
+#import "MatchingGame.h"
 
-@interface SetMatchingGame : NSObject
-
-- (id)initWithCardCount:(NSUInteger)cardCount
-              usingDeck:(Deck *)deck;
-
-- (void)flipCardAtIndex:(NSUInteger)index;
-
-- (Card *)cardAtIndex:(NSUInteger)index;
-
-@property (nonatomic, readonly) int score;
-
-@property (nonatomic, readonly) NSString *status;
-
-@property (nonatomic, readonly, getter=isInProgress) BOOL inProgress;
+@interface SetMatchingGame : MatchingGame
 
 @end

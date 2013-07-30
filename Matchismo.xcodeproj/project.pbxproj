@@ -32,6 +32,8 @@
 		69C2DCBD17A7238000F7EAD4 /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C2DCBC17A7238000F7EAD4 /* SetCard.m */; };
 		69C2DCC017A7256A00F7EAD4 /* SetCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C2DCBF17A7256A00F7EAD4 /* SetCardDeck.m */; };
 		69C2DCC417A8375800F7EAD4 /* NSArray+ComparisonExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C2DCC317A8375800F7EAD4 /* NSArray+ComparisonExtensions.m */; };
+		69C2DCC717A8439400F7EAD4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C2DCC617A8439400F7EAD4 /* GameViewController.m */; };
+		69C2DCCA17A8443B00F7EAD4 /* MatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C2DCC917A8443B00F7EAD4 /* MatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,10 @@
 		69C2DCBF17A7256A00F7EAD4 /* SetCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetCardDeck.m; path = Models/SetCardDeck.m; sourceTree = "<group>"; };
 		69C2DCC217A8375700F7EAD4 /* NSArray+ComparisonExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+ComparisonExtensions.h"; path = "Models/NSArray+ComparisonExtensions.h"; sourceTree = "<group>"; };
 		69C2DCC317A8375800F7EAD4 /* NSArray+ComparisonExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ComparisonExtensions.m"; path = "Models/NSArray+ComparisonExtensions.m"; sourceTree = "<group>"; };
+		69C2DCC517A8439400F7EAD4 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		69C2DCC617A8439400F7EAD4 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		69C2DCC817A8443B00F7EAD4 /* MatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchingGame.h; path = Models/MatchingGame.h; sourceTree = "<group>"; };
+		69C2DCC917A8443B00F7EAD4 /* MatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MatchingGame.m; path = Models/MatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,8 @@
 				693E88741774AD3300309277 /* Supporting Files */,
 				69C2DCB517A71BEE00F7EAD4 /* SetGameViewController.h */,
 				69C2DCB617A71BEE00F7EAD4 /* SetGameViewController.m */,
+				69C2DCC517A8439400F7EAD4 /* GameViewController.h */,
+				69C2DCC617A8439400F7EAD4 /* GameViewController.m */,
 			);
 			path = Matchismo;
 			sourceTree = "<group>";
@@ -172,6 +180,8 @@
 				69C2DCBF17A7256A00F7EAD4 /* SetCardDeck.m */,
 				69C2DCC217A8375700F7EAD4 /* NSArray+ComparisonExtensions.h */,
 				69C2DCC317A8375800F7EAD4 /* NSArray+ComparisonExtensions.m */,
+				69C2DCC817A8443B00F7EAD4 /* MatchingGame.h */,
+				69C2DCC917A8443B00F7EAD4 /* MatchingGame.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -269,6 +279,8 @@
 				69C2DCBD17A7238000F7EAD4 /* SetCard.m in Sources */,
 				69C2DCC017A7256A00F7EAD4 /* SetCardDeck.m in Sources */,
 				69C2DCC417A8375800F7EAD4 /* NSArray+ComparisonExtensions.m in Sources */,
+				69C2DCC717A8439400F7EAD4 /* GameViewController.m in Sources */,
+				69C2DCCA17A8443B00F7EAD4 /* MatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

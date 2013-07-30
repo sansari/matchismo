@@ -13,22 +13,16 @@
 
 @interface SetGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *gameStatus;
-@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (nonatomic) int flipCount;
-
 @property (strong, nonatomic) SetMatchingGame *game;
 @end
 
 @implementation SetGameViewController
 
-- (void)viewDidLoad {
-    [self dealButton:nil];
-}
-
 - (SetMatchingGame *)game
 {
+    
     if (!_game) _game = [[SetMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                           usingDeck:[[SetCardDeck alloc] init]];
     return _game;
@@ -39,6 +33,7 @@
 }
 
 - (void)updateUI {
+    
     for (UIButton *cardButton in self.cardButtons) {
         SetCard *card = (SetCard*)[self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
 
@@ -89,21 +84,5 @@
     self.gameStatus.text = self.game.status;
 }
 
-- (void)setFlipCount:(int)flipCount {
-    _flipCount = flipCount;
-    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
-}
-
-- (IBAction)dealButton:(id)sender {
-    self.game = nil;
-    self.flipCount = 0;
-    [self updateUI];
-}
-
-- (IBAction)flipCard:(UIButton *)sender {
-    [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
-    self.flipCount++;
-    [self updateUI];
-}
 
 @end

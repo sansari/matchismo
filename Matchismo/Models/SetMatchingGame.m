@@ -9,42 +9,13 @@
 #import "SetMatchingGame.h"
 
 @interface SetMatchingGame()
-@property (strong, nonatomic) NSMutableArray *cards;
+@property (strong, nonatomic, readwrite) NSMutableArray *cards;
 @property (nonatomic, readwrite) int score;
 @property (nonatomic, readwrite) NSString *status;
 @property (nonatomic, readwrite) BOOL inProgress;
 @end
 
 @implementation SetMatchingGame
-
-- (NSMutableArray *)cards {
-    if (!_cards) _cards = [[NSMutableArray alloc] init];
-    return _cards;
-}
-
-- (id)initWithCardCount:(NSUInteger)count
-              usingDeck:(Deck *)deck {
-    self = [super init];
-
-    if (self) {
-        self.inProgress = NO;
-        for (int i=0; i < count; i++) {
-            Card *card = [deck drawRandomCard];
-
-            if (!card) {
-                self = nil;
-            } else {
-                self.cards[i] = card;
-            }
-        }
-    }
-
-    return self;
-}
-
-- (Card *)cardAtIndex:(NSUInteger)index {
-    return (index < self.cards.count) ? self.cards[index] : nil;
-}
 
 #define FLIP_COST 1
 #define MATCH_BONUS 4
